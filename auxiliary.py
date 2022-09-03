@@ -13,6 +13,12 @@ def get_key_from_value(d, val):
     return None
 
 
+def make_a_bid():
+    name = input('What is your name?: ')
+    bid = int(input("What's your bid?: $"))
+    return name, bid
+
+
 if __name__ == '__main__':
     print('hello')
     clear_console()
