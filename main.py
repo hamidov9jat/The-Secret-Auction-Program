@@ -1,5 +1,6 @@
 from art import logo
 from auxiliary import make_a_bid, clear_console, get_key_from_value
+from auxiliary import get_winner
 
 print(logo)
 print('Welcome to the secret auction program')
@@ -18,3 +19,7 @@ while not end_of_game:
         end_of_game = True
     else:
         clear_console()
+
+winner_name, winner_bid = get_winner(bidders)
+print(f'The winner is {winner_name} with '
+      f'a bid of ${winner_bid}.')
