@@ -19,6 +19,12 @@ def make_a_bid():
     return name, bid
 
 
+def get_highest_bid(bidders: dict):
+    max_bid = max(bidders.values())
+    name = get_key_from_value(bidders, max_bid)
+    return name, max_bid
+
+
 if __name__ == '__main__':
     print('hello')
     clear_console()
