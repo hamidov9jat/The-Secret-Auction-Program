@@ -10,9 +10,10 @@ bidders = {}
 
 while not end_of_game:
     # Bidder has name and bid
-    bidder = make_a_bid()
+    name, bid = make_a_bid()
 
-    bidders.update(bidder)
+    # Add the bidder's name and his bid to the dictionary
+    bidders[name] = bid
 
     ans = input('Are there any other bidders? Type "yes" or "no".\n').lower()
     if ans == 'no':

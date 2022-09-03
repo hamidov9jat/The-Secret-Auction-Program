@@ -2,7 +2,6 @@ import os
 
 
 def clear_console():
-    print(os.name)
     os.system('cls')
 
 
