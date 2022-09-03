@@ -18,3 +18,5 @@ while not end_of_game:
         end_of_game = True
     else:
         clear_console()
+
+changes in

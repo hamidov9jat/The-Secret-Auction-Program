@@ -19,7 +19,7 @@ def make_a_bid():
     return name, bid
 
 
-def get_highest_bid(bidders: dict):
+def get_winner(bidders: dict):
     max_bid = max(bidders.values())
     name = get_key_from_value(bidders, max_bid)
     return name, max_bid
